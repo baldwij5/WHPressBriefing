@@ -62,18 +62,3 @@ df = pd.DataFrame(data)
 print(df)
 
 df.to_csv(r'Desktop\\test.csv')
-
-
-# for fname in glob.iglob(r'index-pages\*.html'):
-#     print(fname)
-#     with open(fname, 'r') as rf:
-#         txt = rf.read()
-#     # parse the HTML
-#     soup = BeautifulSoup(txt, 'lxml')
-#     # extract the URLs
-#     for h in soup.find_all('h2'):
-#         a = h.find('a')
-#         if a is None:
-#             continue
-#         # url = urljoin(WH_BASE_URL, a.attrs['href'])
-#         url.append(a.attrs['href'])
